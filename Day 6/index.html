@@ -3,18 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
-      <div class="display"><p>0</p></div>
-
+      <input type="number" id="inpt1" placeholder="Masukkan angka" />
+      <input type="number" id="inpt2" placeholder="Masukkan angka" />
+      <span id="result">0</span>
       <div class="operator">
-        <button>+</button>
-        <button>-</button>
-        <button>x</button>
-        <button>%</button>
+        <button onclick="count('+')">+</button>
+        <button onclick="count('-')">-</button>
+        <button onclick="count('*')">x</button>
+        <button onclick="count('/')">÷</button>
       </div>
     </div>
 

@@ -32,19 +32,19 @@ button:active {
   color: #fff;
 }
 
-.display {
+#inpt1,
+#inpt2,
+#result {
   border: 1px #020202 solid;
   background-color: rgb(172, 173, 173);
   height: 40px;
-  border-radius: 20px;
+  width: 100%;
+  border-radius: 13px;
   display: flex;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
   padding: 5px;
-  color: #000;
-}
-
-.display p {
-  margin-right: 20px;
+  color: #212121;
+  font-weight: 500;
   font-size: 25px;
 }
