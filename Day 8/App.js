@@ -1,4 +1,4 @@
-import Person from "C:\Users\itsma\OneDrive\Documents\Project\Belajar\JavaScript\Day 8\libraScript.js"
+import Person from "./components/libraScript";
 
 const object = {
   name: "malik",
@@ -6,10 +6,9 @@ const object = {
   hobby: "wkwkwk",
 };
 
-
+console.log(Person);
 
 // const malik = new Person();
 // malik.name = "malik";
 // malik.age = 12;
 // malik.sayHello("Yuki");
-
