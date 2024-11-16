@@ -8,7 +8,7 @@ const object = {
 
 console.log(Person);
 
-// const malik = new Person();
-// malik.name = "malik";
-// malik.age = 12;
-// malik.sayHello("Yuki");
+const malik = new Person();
+malik.name = "malik";
+malik.age = 12;
+malik.sayHello("Yuki");
