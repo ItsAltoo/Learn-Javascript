@@ -65,3 +65,83 @@ class Ahmed extends Budi {
 
 const fromBudi = new Ahmed();
 fromBudi.sayHello("yoi");
+
+class Customer {
+  firstName;
+  lastName;
+  age = 18;
+
+  constructor(firstName, lastName) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+  main() {}
+}
+
+let customer = new Customer("Nah", "NAhhhhhhhhhh");
+console.log(customer);
+
+console.log("");
+
+class privateField {
+  #counter = 0;
+
+  increment() {
+    this.#counter++;
+  }
+
+  decrement() {
+    this.#counter--;
+  }
+
+  get() {
+    return this.#counter;
+  }
+}
+
+let conter = new privateField();
+
+conter.increment();
+conter.increment();
+conter.increment();
+conter.increment();
+conter.increment();
+
+console.log(conter.get());
+console.log(conter);
+
+console.log("");
+
+class People {
+  say(nama) {
+    if (nama) {
+      this.#sayHello(nama);
+    } else {
+      this.#sayWithoutName();
+    }
+  }
+
+  #sayHello(nama) {
+    console.log(`Hello ${nama}`);
+  }
+
+  #sayWithoutName() {
+    console.log("Hallo");
+  }
+}
+
+let doSay = new People();
+doSay.say();
+doSay.say("wajay");
+
+console.log("");
+
+class Main {}
+
+class Index {}
+
+let yui = new Main();
+let yuki = new Index();
+
+console.log(typeof yui);
+console.log(typeof yuki);
