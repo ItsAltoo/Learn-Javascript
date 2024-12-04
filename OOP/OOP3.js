@@ -145,3 +145,21 @@ let yuki = new Index();
 
 console.log(typeof yui);
 console.log(typeof yuki);
+
+// Cara Mengecek Objek instance yang di buat class
+console.log(yui instanceof Main);
+console.log(yui instanceof Index);
+
+console.log(yuki instanceof Main);
+console.log(yuki instanceof Index);
+
+console.log("");
+// Operator instanceof juka mendukung class inheritance
+
+class Loka extends Main {}
+
+let loka = new Loka();
+
+console.log(loka instanceof Main);
+console.log(loka instanceof Index);
+console.log(loka instanceof Loka);
