@@ -163,3 +163,9 @@ let loka = new Loka();
 console.log(loka instanceof Main);
 console.log(loka instanceof Index);
 console.log(loka instanceof Loka);
+
+import { Operator } from "./lib/math";
+
+let operasi = new Operator(3, 4);
+
+console.log(operasi.tambah());
