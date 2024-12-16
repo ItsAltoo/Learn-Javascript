@@ -10,37 +10,37 @@ while (true) {
 
   let pilih = prompt("Pilih Pilihan anda 1-8 :");
 
-  if (pilih == "1") {
+  if (pilih === "1") {
     let pilih = "Keyboard";
     isiBelanjaan.append(pilih);
     console.log("=======================================================");
     console.log(`Anda Telah Memilih : '${pilih}'`);
-  } else if (pilih == "2") {
+  } else if (pilih === "2") {
     let pilih = "Monitor";
     isiBelanjaan.append(pilih);
     console.log("=======================================================");
     console.log(`Anda Telah Memilih : '${pilih}'`);
-  } else if (pilih == "3") {
+  } else if (pilih === "3") {
     let pilih = "Mouse";
     isiBelanjaan.append(pilih);
     console.log("=======================================================");
     console.log(`Anda Telah Memilih : '${pilih}' `);
-  } else if (pilih == "4") {
+  } else if (pilih === "4") {
     let pilih = "Laptop";
     isiBelanjaan.append(pilih);
     console.log("=======================================================");
     console.log(`Anda Telah Memilih : '${pilih}'`);
-  } else if (pilih == "5") {
+  } else if (pilih === "5") {
     let pilih = "Mouse Pad";
     isiBelanjaan.append(pilih);
     console.log("=======================================================");
     console.log(`Anda Telah Memilih : '${pilih}' `);
-  } else if (pilih == "6") {
+  } else if (pilih === "6") {
     let pilih = "Ram";
     isiBelanjaan.append(pilih);
     console.log("=======================================================");
     console.log(`Anda Telah Memilih : '${pilih}' `);
-  } else if (pilih == "7") {
+  } else if (pilih === "7") {
     let loop = true;
     while (loop) {
       console.log("\n==================Daftar Belanjaan====================");
@@ -53,9 +53,9 @@ while (true) {
       console.log("Ketik 'y/n' untuk keluar atau tidak");
       let exit = prompt("Exit? :");
 
-      if (exit == "y") {
+      if (exit === "y") {
         break;
-      } else if (exit == "n") {
+      } else if (exit === "n") {
         console.log("=======================================================");
         console.log("Exit dibatalkan, ketik y/n untuk memilih exit");
       } else {
@@ -63,7 +63,7 @@ while (true) {
         console.log("Masukkan input yang benar");
       }
     }
-  } else if (pilih == "8") {
+  } else if (pilih === "8") {
     console.log("=================Terima Kasih Telah Mencoba=================");
     break;
   } else {
