@@ -13,21 +13,27 @@ class Buku {
 }
 
 class Mahasiswa extends Buku {
-  constructor(namaMhs, nim) {
-    super(this.judul);
+  constructor(judul,pengarang,terbit,namaMhs, nim) {
+    super(judul,pengarang,terbit);
     this.nama = namaMhs;
     this.nim = nim;
-    this.bukuDipinjam = []
+    this.bukuDipinjam = [];
   }
 
   pinjamBuku = () => {
-    this.bukuDipinjam.push(this.judul)
-  }
+    this.bukuDipinjam.push(this.judul);
+  };
 
-  simpanFile = () => {
-
-  }
+  simpanFile = () => {};
 }
 
 let buku = new Buku("buku", "saya", 123);
 buku.deskripsi();
+
+console.log("~~~~~~~~~~~~~~");
+
+let newBook = new Mahasiswa("Napoleon", "jordan", 2016);
+newBook.deskripsi();
+
+console.log("~~~~~~~~~~~~~~");
+
