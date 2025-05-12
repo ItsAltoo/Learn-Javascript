@@ -1,12 +1,14 @@
-let x = 5;
-let y = 2;
-let a = 2;
+const fs = require("fs");
 
-while (a > 0) {
-  x *= y;
-  // x *= y sama saja dengan x = x.y, a > 0, 2 > 0, a--, x=5.2=10, 10=10.2=20, maka hasil yang di console adalah 20 //
+const data = [
+  { nama: "Malik", umur: 18 },
+  { nama: "Rizky", umur: 20 },
+];
+fs.writeFileSync("data.json", JSON.stringify(data));
 
-  a--;
-}
+const readData = fs.readFileSync("data.json", "utf-8");
+const parsedData = JSON.parse(readData);
 
-console.log(x);
+parsedData.map((item) => {
+  console.log(`Name: ${item.nama}, Age: ${item.umur}`);
+});

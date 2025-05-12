@@ -4,6 +4,7 @@
 
 // tugas 2
 let date = new Date().getDay();
+let jam = new Date().getHours();
 let hari;
 
 switch (date) {
@@ -30,4 +31,6 @@ switch (date) {
     break;
 }
 
-alert(`hari ini adalah hari ${hari}`);
+console.log(`hari ini adalah hari ${hari}`);
+console.log(`jam sekarang adalah ${jam}`);
+

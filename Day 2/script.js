@@ -42,5 +42,5 @@ const search = (kalimat) => {
   }
 };
 
-let input = prompt("Masukkan Kalimat: ");
+let input = 'Saya suka belajar javascript';
 search(input);
